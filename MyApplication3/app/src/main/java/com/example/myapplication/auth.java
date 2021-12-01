@@ -19,7 +19,7 @@ public class auth extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String query;
-        query = "CREATE TABLE " + TABLE_NAME + "(ID INTEGER PRIMARY KEY, Login TEXT, Password TEXT)";
+        query = "CREATE TABLE " + TABLE_NAME + "(ID INTEGER PRIMARY KEY, Login TEXT, Password TEXT,Allow TEXT)";
         db.execSQL(query);
     }
 
