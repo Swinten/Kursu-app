@@ -14,11 +14,9 @@ public class Question {
         con = new BD(FF.getAppContext());
         con.getNotes();
     }
-    public String questions[] = {
-            "Which is a Programming Language?",
-            "Which is a Programming Language?"
-    };
-
+    public int getlong(){
+        return con.arrayList.size();
+    }
     public String getQuestion(int a){
 
         String question =con.arrayList.get(a).getName();
