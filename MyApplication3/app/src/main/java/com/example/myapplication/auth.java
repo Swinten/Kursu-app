@@ -12,13 +12,14 @@ public class auth extends SQLiteOpenHelper {
     public static final String DATABASE_NAME = "Users";
     public static final int DATABASE_VERSION = 1;
     public static final String TABLE_NAME = "Users";
-    public String User ="no";
+    public String User ="Пользователь";
     public String k="-1";
+    public String num;
 
     @Override
     public void onCreate(SQLiteDatabase db) {
         String query;
-        query = "CREATE TABLE " + TABLE_NAME + "(ID INTEGER PRIMARY KEY, Login TEXT, Password TEXT,Allow TEXT)";
+        query = "CREATE TABLE " + TABLE_NAME + "(ID INTEGER PRIMARY KEY, Login TEXT, Password TEXT)";
         db.execSQL(query);
     }
 
@@ -47,7 +48,7 @@ public class auth extends SQLiteOpenHelper {
         sqLiteDatabase.close();
     }
     public void setData(){
-        User ="no";
+        User ="Пользователь";
         k="-1";
     }
     public String getUser(){

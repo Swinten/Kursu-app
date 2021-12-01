@@ -99,16 +99,6 @@
             android:text="Ваш лучший результат"
             android:textSize="20sp" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="15dp"
-            android:background="@android:drawable/gallery_thumb"
-            android:text="20/23"
-            android:textSize="60sp" />
-
         <Button
             android:id="@+id/Start"
             android:layout_width="wrap_content"

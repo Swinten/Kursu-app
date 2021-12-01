@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     auth logDB;
     private static Context context;
     Button st,sw,au,Re;
-    private TextView Stud,fir,sec,Guy,Key,Password2,login,Password,Nick,keys;
+    TextView Stud,fir,sec,Guy,Key,Password2,login,Password,Nick,keys;
     Button Reg,log,ex,b,b1;
     String allow = "-1";
     @Override
@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         sw = findViewById(R.id.ADDDDD);
         au = findViewById(R.id.au);
         Re = findViewById(R.id.Re);
+        Nick = findViewById(R.id.Nick);
         ex = findViewById(R.id.ex);
         d = new BD(this);
         sw.setOnClickListener(new View.OnClickListener() {
@@ -78,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 allow="0";
+                Nick.setText("Пользователь");
                 logDB.setData();
                 au.setVisibility(View.VISIBLE);
                 ex.setVisibility(View.GONE);
@@ -108,7 +110,6 @@ public class MainActivity extends AppCompatActivity {
         q3 = dialog.findViewById(R.id.q3);
         q4 = dialog.findViewById(R.id.q4);
         ri = dialog.findViewById(R.id.ri);
-        Nick = findViewById(R.id.Nick);
         add = (Button)dialog.findViewById(R.id.log);
         close = (Button) dialog.findViewById(R.id.close);
         close.setOnClickListener(new View.OnClickListener() {;
@@ -219,7 +220,7 @@ public class MainActivity extends AppCompatActivity {
                     if (temp==0) {
                         au.setVisibility(View.GONE);
                         ex.setVisibility(View.VISIBLE);
-                        //Nick.setText(login.getText());
+                        Nick.setText(logDB.getUser());
                         dialog.cancel();
                     }
                 }
