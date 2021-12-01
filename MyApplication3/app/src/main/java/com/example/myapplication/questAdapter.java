@@ -11,13 +11,13 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 
 public class questAdapter extends AppCompatActivity implements View.OnClickListener {
     Button btn_one, btn_two, btn_three, btn_four;
     TextView tv_question;
-
     private Question question = new Question();
 
     private String answer;
@@ -29,6 +29,7 @@ public class questAdapter extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity);
+        System.out.println();
 
         random = new Random();
 
@@ -51,7 +52,7 @@ public class questAdapter extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_one:
-                if (btn_one.getText() == answer) {
+                if (btn_one.getText().equals(answer)) {
                     Toast.makeText(questAdapter.this, "You Are Correct", Toast.LENGTH_SHORT).show();
                     NextQuestion(random.nextInt(questionLength));
                 } else {
@@ -61,7 +62,7 @@ public class questAdapter extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.btn_two:
-                if (btn_two.getText() == answer) {
+                if (btn_two.getText().equals(answer)) {
                     Toast.makeText(questAdapter.this, "You Are Correct", Toast.LENGTH_SHORT).show();
                     NextQuestion(random.nextInt(questionLength));
                 } else {
@@ -71,7 +72,7 @@ public class questAdapter extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.btn_three:
-                if (btn_three.getText() == answer) {
+                if (btn_three.getText().equals(answer)) {
                     Toast.makeText(questAdapter.this, "You Are Correct", Toast.LENGTH_SHORT).show();
                     NextQuestion(random.nextInt(questionLength));
                 } else {
@@ -81,7 +82,8 @@ public class questAdapter extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.btn_four:
-                if (btn_four.getText() == answer) {
+
+                if (btn_four.getText().equals(answer)) {
                     Toast.makeText(questAdapter.this, "You Are Correct", Toast.LENGTH_SHORT).show();
                     NextQuestion(random.nextInt(questionLength));
                 } else {
@@ -99,6 +101,8 @@ public class questAdapter extends AppCompatActivity implements View.OnClickListe
         btn_three.setText(question.getchoice3(num));
         btn_four.setText(question.getchoice4(num));
         answer = question.getCorrectAnswer(num);
+        //System.out.println(btn_four.getText());
+        //System.out.println(answer);
     }
 
     private void GameOver() {

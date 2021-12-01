@@ -65,88 +65,49 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-
-            <TextView
-                android:id="@+id/Name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:foregroundGravity="right"
-                android:gravity="center"
-                android:text="Антон"
-                android:textSize="48sp" />
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="190dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@android:drawable/gallery_thumb"
-                android:gravity="center"
-                android:text="20/23"
-                android:textSize="60sp" />
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-
-            <Button
-                android:id="@+id/Start"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Начать тестирование" />
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/button5"
+        <TextView
+            android:id="@+id/Name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:text="Антон"
+            android:textSize="48sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:text="Ваш лучший результат"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:background="@android:drawable/gallery_thumb"
+            android:text="20/23"
+            android:textSize="60sp" />
+
+        <Button
+            android:id="@+id/Start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Начать тестирование" />
+
+        <Button
+            android:id="@+id/ADDDDD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginBottom="156dp"
             android:text="Добавить тест" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

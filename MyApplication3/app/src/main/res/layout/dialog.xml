@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="15dp"
+    android:background="@android:color/holo_orange_light"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="right"
+        android:background="@android:drawable/alert_light_frame"
+        android:foreground="@android:drawable/btn_dialog" />
+
+    <EditText
+        android:id="@+id/qest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_default_small"
+        android:ems="10"
+        android:hint="Вопрос"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Варианты ответа"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/q1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_default_small"
+        android:ems="10"
+        android:hint="Вариант 1"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/q2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_default_small"
+        android:ems="10"
+        android:hint="Вариант 2"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/q3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_default_small"
+        android:ems="10"
+        android:hint="Вариант 3"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/q4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_default_small"
+        android:ems="10"
+        android:hint="Вариант 4"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Правильный ответ" />
+
+    <EditText
+        android:id="@+id/ri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_default_small"
+        android:ems="10"
+        android:hint="Правильный ответ"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/addBD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Добавить" />
+
+</LinearLayout>
